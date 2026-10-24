@@ -2,8 +2,9 @@ let amigos = [];
 
 function adicionar() {
     let amigo = document.getElementById('nome-amigo');
-    if (amigo.value == ''){
+    if (amigo.value.trim() == ''){
       alert ('Informar nome do amigo!');
+      return;
     }
 
     if (amigos.includes(amigo.value)){
